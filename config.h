@@ -19,11 +19,11 @@ static int instant = 0;                     /* -n  option; if 1, selects matchin
 #endif // INSTANT_PATCH
 #if CENTER_PATCH
 static int center = 1;                      /* -c  option; if 0, dmenu won't be centered on the screen */
-static int min_width = 600;                 /* minimum width when centered */
+static int min_width = 400;                 /* minimum width when centered */
 #endif // CENTER_PATCH
 #if BARPADDING_PATCH
-static const int vertpad = 10;              /* vertical padding of bar */
-static const int sidepad = 10;              /* horizontal padding of bar */
+static const int vertpad = 1;              /* vertical padding of bar */
+static const int sidepad = 1;              /* horizontal padding of bar */
 #endif // BARPADDING_PATCH
 #if RESTRICT_RETURN_PATCH
 static int restrict_return = 0;             /* -1 option; if 1, disables shift-return and ctrl-return */
@@ -93,7 +93,7 @@ char *colors[][2] = {
 	/*               fg         bg       */
 	[SchemeNorm] = { "#F8F8F2", "#22212C" },
 	[SchemeSel]  = { "#22212C", "#8AFF80" },
-	[SchemeOut]  = { "#22212C", "#8AFF80" },
+	[SchemeOut]  = { "#ff0000", "#8AFF80" },
 	#if BORDER_PATCH
 	[SchemeBorder] = { "#22212C", "#84FFF3" },
 	#endif // BORDER_PATCH
@@ -117,10 +117,10 @@ char *colors[][2] = {
 	#endif // EMOJI_HIGHLIGHT_PATCH
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 0;
+static unsigned int lines      = 20;
 #if GRID_PATCH
 /* -g option; if nonzero, dmenu uses a grid comprised of columns and lines */
-static unsigned int columns    = 0;
+static unsigned int columns    = 2;
 #endif // GRID_PATCH
 #if LINE_HEIGHT_PATCH
 static unsigned int lineheight = 0;         /* -h option; minimum height of a menu line     */

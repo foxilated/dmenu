@@ -19,7 +19,7 @@ static int instant = 0;                     /* -n  option; if 1, selects matchin
 #endif // INSTANT_PATCH
 #if CENTER_PATCH
 static int center = 1;                      /* -c  option; if 0, dmenu won't be centered on the screen */
-static int min_width = 600;                 /* minimum width when centered */
+static int min_width = 200;
 #endif // CENTER_PATCH
 #if BARPADDING_PATCH
 static const int vertpad = 1;              /* vertical padding of bar */

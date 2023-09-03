@@ -38,7 +38,7 @@ static char *fonts[] =
 static const char *fonts[] =
 #endif // XRESOURCES_PATCH
 {
-	"JetBrainsMono Nerd Font:size=1"
+	"JetBrainsMono Nerd Font:size=16"
 };
 #endif // PANGO_PATCH
 #if MANAGED_PATCH
@@ -117,7 +117,7 @@ char *colors[][2] = {
 	#endif // EMOJI_HIGHLIGHT_PATCH
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 20;
+static unsigned int lines      = 16;
 #if GRID_PATCH
 /* -g option; if nonzero, dmenu uses a grid comprised of columns and lines */
 static unsigned int columns    = 1;

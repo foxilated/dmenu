@@ -113,13 +113,13 @@
  * is only one matching option left.
  * https://tools.suckless.org/dmenu/patches/instant/
  */
-#define INSTANT_PATCH 0
+#define INSTANT_PATCH 1
 
 /* This patch adds a '-h' option which sets the minimum height of a dmenu line. This helps
  * integrate dmenu with other UI elements that require a particular vertical size.
  * http://tools.suckless.org/dmenu/patches/line-height/
  */
-#define LINE_HEIGHT_PATCH 0
+#define LINE_HEIGHT_PATCH 1
 
 /* This patch adds a -wm flag which sets override_redirect to false; thus letting your window
  * manager manage the dmenu window.
